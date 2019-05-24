@@ -1,7 +1,6 @@
 trigger:
   branches:
     include: ['*']
-    exclude: [v1, v2, oldv3]
   paths:
     include: ['*']
     exclude:
@@ -11,7 +10,7 @@ trigger:
 
 pr:
   branches:
-    include: [master]
+    include: [develop]
 
 pool:
   vmImage: ubuntu-16.04
