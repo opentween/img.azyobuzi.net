@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json.schemastore.org/proxies",
+  "proxies": {
+    "root": {
+      "matchCondition": {
+        "methods": [ "GET", "HEAD" ],
+        "route": "/"
+      },
+      "responseOverrides": {
+        "response.statusCode": "301",
+        "response.headers.Location": "https://github.com/opentween/img.opentween.org"
+      }
+    }
+  }
+}
